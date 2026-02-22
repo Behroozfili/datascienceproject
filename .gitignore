@@ -1,0 +1,22 @@
+# Virtual Environment
+datascienceproject/
+venv/
+env/
+.env
+
+# Python Bytecode
+__pycache__/
+*.py[cod]
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Data Files (Recommended to ignore large files)
+*.csv
+*.xlsx
+*.sqlite
+data/
+
+# IDEs
+.vscode/
+.idea/

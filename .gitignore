@@ -3,6 +3,8 @@ datascienceproject/
 venv/
 env/
 .env
+logs/
+artifacts/
 
 # Python Bytecode
 __pycache__/

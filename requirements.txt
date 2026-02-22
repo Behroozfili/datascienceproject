@@ -7,8 +7,9 @@ matplotlib
 python-box
 pyyaml
 tqdm
-ensure==0.1.2
+ensure
 joblib
 types-pyyaml
 Flask
 flask-cors
+ipykernel

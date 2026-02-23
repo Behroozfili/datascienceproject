@@ -1,1 +1,31 @@
-key : value
+COLUMNS:
+  class:
+    type: int64
+  Alcohol:
+    type: float64
+  Malic acid:
+    type: float64
+  Ash:
+    type: float64
+  Alcalinity of ash:
+    type: float64
+  Magnesium:
+    type: int64
+  Total phenols:
+    type: float64
+  Flavanoids:
+    type: float64
+  Nonflavanoid phenols:
+    type: float64
+  Proanthocyanins:
+    type: float64
+  Color intensity:
+    type: float64
+  Hue:
+    type: float64
+  OD280/OD315 of diluted wines:
+    type: float64
+  Proline:
+    type: int64 
+TARGET_COLUMN: 
+  name: Proline

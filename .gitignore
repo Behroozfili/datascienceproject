@@ -5,6 +5,7 @@ env/
 .env
 logs/
 artifacts/
+ARCHITECTURE_BLUEPRINT.md
 
 # Python Bytecode
 __pycache__/

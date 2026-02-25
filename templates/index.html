@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wine Analysis Prediction</title>
+    </head>
+<body class="form-v9">
+    <div class="page-content">
+        <div class="form-v9-content" style="background-image: url('static/assets/img/form-v9.jpg')">
+            <form class="form-detail" action="/predict" method="post">
+                <h2>Wine Feature Information</h2>
+                
+                <div class="form-row-total">
+                    <div class="form-row">
+                        <label for="class">Wine Class (1, 2, or 3):</label>
+                        <input type="number" name="class" id="class" class="input-text" placeholder="e.g. 1" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="Alcohol">Alcohol:</label>
+                        <input type="text" name="Alcohol" id="Alcohol" class="input-text" placeholder="Alcohol" required>
+                    </div>
+                </div>
+
+                <div class="form-row-total">
+                    <div class="form-row">
+                        <label for="Malic_acid">Malic Acid:</label>
+                        <input type="text" name="Malic_acid" id="Malic_acid" class="input-text" placeholder="Malic acid" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="Ash">Ash:</label>
+                        <input type="text" name="Ash" id="Ash" class="input-text" placeholder="Ash" required>
+                    </div>
+                </div>
+
+                <div class="form-row-total">
+                    <div class="form-row">
+                        <label for="Alcalinity_of_ash">Alcalinity of Ash:</label>
+                        <input type="text" name="Alcalinity_of_ash" id="Alcalinity_of_ash" class="input-text" placeholder="Alcalinity" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="Magnesium">Magnesium:</label>
+                        <input type="number" name="Magnesium" id="Magnesium" class="input-text" placeholder="Magnesium" required>
+                    </div>
+                </div>
+
+                <div class="form-row-total">
+                    <div class="form-row">
+                        <label for="Total_phenols">Total Phenols:</label>
+                        <input type="text" name="Total_phenols" id="Total_phenols" class="input-text" placeholder="Total phenols" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="Flavanoids">Flavanoids:</label>
+                        <input type="text" name="Flavanoids" id="Flavanoids" class="input-text" placeholder="Flavanoids" required>
+                    </div>
+                </div>
+
+                <div class="form-row-total">
+                    <div class="form-row">
+                        <label for="Nonflavanoid_phenols">Nonflavanoid Phenols:</label>
+                        <input type="text" name="Nonflavanoid_phenols" id="Nonflavanoid_phenols" class="input-text" placeholder="Nonflavanoid" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="Proanthocyanins">Proanthocyanins:</label>
+                        <input type="text" name="Proanthocyanins" id="Proanthocyanins" class="input-text" placeholder="Proanthocyanins" required>
+                    </div>
+                </div>
+
+                <div class="form-row-total">
+                    <div class="form-row">
+                        <label for="Color_intensity">Color Intensity:</label>
+                        <input type="text" name="Color_intensity" id="Color_intensity" class="input-text" placeholder="Color intensity" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="Hue">Hue:</label>
+                        <input type="text" name="Hue" id="Hue" class="input-text" placeholder="Hue" required>
+                    </div>
+                </div>
+
+                <div class="form-row-total">
+                    <div class="form-row">
+                        <label for="OD280_OD315">OD280/OD315 of diluted wines:</label>
+                        <input type="text" name="OD280_OD315" id="OD280_OD315" class="input-text" placeholder="OD280/OD315" required>
+                    </div>
+                </div>
+
+                <div class="form-row-last">
+                    <input type="submit" name="register" class="register" value="Predict Proline Content">
+                </div>
+
+                {% if prediction %}
+                <div style="text-align: center; margin-top: 20px; color: white;">
+                    <h3>Predicted Proline: {{ prediction }}</h3>
+                </div>
+                {% endif %}
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
